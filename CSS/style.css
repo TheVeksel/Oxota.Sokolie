@@ -674,8 +674,8 @@ line-height: 37.7px; /* 145% */
 }
 
 .contact__image-box {
-  width: 540px;
-  height: 812px;
+  width: 560px;
+  height: 800px;
   flex-shrink: 0;
   border-radius: 4px;
   overflow: hidden;
