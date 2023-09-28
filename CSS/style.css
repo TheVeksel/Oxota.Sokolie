@@ -15,7 +15,8 @@ body {
   max-width: 128.89366272824918vh; 
   margin: 0 auto; 
   background-color: rgba(255, 255, 255, 0.8); 
-  padding: 7.518796992481203vh; 
+  padding-left: 7.518796992481203vh; 
+  padding-right: 7.518796992481203vh; 
 }
 
 .wrapper {
@@ -95,6 +96,7 @@ margin-right: 2.1482277121374866vh;
 
 .about__heading {
   text-align: center;
+  padding-top: 60px;
 }
 .about__title {
   color: #000;
@@ -269,6 +271,7 @@ margin-right: 2.1482277121374866vh;
   line-height: 38px; /* 154.545% */
   max-width: 720px;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 
 
@@ -353,6 +356,7 @@ table {
   font-family: KellySlab;
   font-weight: 700;
   font-size: 3.1482277121374866vh;
+  padding-bottom: 80px;
 }
 
 /*--------------------------------SERVESES------------------------------------------------------------*/
@@ -377,6 +381,7 @@ font-size: 4.296455424274973vh;
 font-weight: 700;
 line-height: 51.66px; /* 123% */
 margin-bottom: 30px;
+padding-top: 80px;
 }
 
 .program__heading-title {
@@ -469,10 +474,11 @@ line-height: 37.7px; /* 145% */
 }
 
 .news {
-
+  
 }
 
 .news__title {
+  padding-top: 80px;
   color: #000;
   text-align: center;
   font-family: KellySlab;
@@ -497,7 +503,7 @@ line-height: 37.7px; /* 145% */
   line-height: 37.2px; /* 155% */
   max-width: calc(1920px - 1160px);
   margin: 0 auto;
-  margin-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .news__tel { 
@@ -582,6 +588,7 @@ line-height: 37.7px; /* 145% */
 }
 
 .howto__header {
+  padding-top: 100px;
   color: #000;
   text-align: center;
   font-family: KellySlab;
@@ -596,6 +603,7 @@ line-height: 37.7px; /* 145% */
 }
 
 .howto__list {
+  padding-bottom: 120px;
 }
 
 .howto__list-item {
@@ -627,6 +635,7 @@ line-height: 37.7px; /* 145% */
 }
 
 .contact__heading {
+  padding-top: 100px;
   margin-bottom: 40px;
 }
 
