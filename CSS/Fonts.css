@@ -1,0 +1,41 @@
+@font-face{
+  font-family: lato;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: local("lato"),
+    url("../Fonts/Lato-Black.woff2") format('woff2'),
+    url("../Fonts/Lato-Black.woff") format('woff'),
+    url("../Fonts/Lato-Black.eot") format('eot')
+}
+@font-face{
+  font-family: lato;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local("lato"),
+    url("../Fonts/Lato-bold.woff2") format('woff2'),
+    url("../Fonts/Lato-bold.woff") format('woff'),
+    url("../Fonts/Lato-bold.eot") format('eot')
+}
+@font-face{
+  font-family: lato;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("lato"),
+    url("../Fonts/Lato-Regular.woff2") format('woff2'),
+    url("../Fonts/Lato-Regular.woff") format('woff'),
+    url("../Fonts/Lato-Regular.eot") format('eot');
+}
+
+@font-face{
+  font-family: KellySlab;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:  local("KellySlab"),
+    url("../Fonts/KellySlab-Regular.woff2") format('woff2'),
+    url("../Fonts/KellySlab-Regular.woff") format('woff'),
+    url("../Fonts/KellySlab-Regular.eot") format('eot');
+}
