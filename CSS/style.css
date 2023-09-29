@@ -621,20 +621,18 @@ table {
 }
 @media screen and (max-width: 600px) {
   .kaban th, .kaban td, .kaban tr {
-      padding: 4px; /* Убираем паддинг для узких экранов только в таблицах с классом "kaban" */
+      padding: 4px; 
   }
 
-  /* Уменьшаем размеры клеток таблицы на 20 пикселей для таблиц с классом "kaban" */
   .kaban td, .kaban th, .kaban tr {
-      max-width: calc(20% - 200px); /* Уменьшаем ширину на 20 пикселей и пересчитываем размер */
+      max-width: calc(20% - 200px); 
   }
 }
 @media screen and (max-width: 400px) {
   .kaban th, .kaban td, .kaban tr {
-      padding: 0; /* Убираем паддинг для очень узких экранов только в таблицах с классом "kaban" */
+      padding: 0; 
   }
 
-  /* Уменьшаем размеры клеток таблицы еще больше для таблиц с классом "kaban" */
   .kaban td, .kaban th {
       max-width: 80%; 
   }
