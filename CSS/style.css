@@ -570,7 +570,6 @@ table {
   display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
 .info__person {
@@ -588,4 +587,23 @@ table {
   color: #000;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.contact__huntplace {
+
+}
+.contact__huntplace-heading {
+  font-family: KellySlab;
+  font-weight: 700;
+  font-size: 4.5vh;
+  line-height: 150%;
+  color: #000;
+  margin-bottom: 30px;
+}
+.contact__huntplace-map {
+  border: #000 ridge 3px;
+}
+
+.displaynone {
+  padding-bottom: 100px;
 }
