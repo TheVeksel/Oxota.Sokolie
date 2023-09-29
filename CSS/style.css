@@ -530,7 +530,6 @@ table {
 }
 
 .contact__content{
-  margin-right: 30px;
   text-align: center;
 }
 
@@ -549,6 +548,7 @@ table {
 }
 
 .contacts__list-item {
+  text-align: center;
   margin-bottom: 24px;
   margin-left: 34px;
 }
