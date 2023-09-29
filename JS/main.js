@@ -34,4 +34,18 @@ $(window).scroll(function() {
   });
 });
 
+function checkScreenWidth() {
+  const screenWidth = window.innerWidth;
+  const changingText = document.getElementById('changing-text');
+
+  if (screenWidth <= 1135) {
+      changingText.textContent = "Союз ООРО Всеволожского района Ленинградской области";
+  } else {
+      changingText.textContent = "МОО «Союз ООРО Всеволожского района Ленинградской области»";
+  }
+}
+
+window.onload = checkScreenWidth;
+window.onresize = checkScreenWidth;
+
 })
