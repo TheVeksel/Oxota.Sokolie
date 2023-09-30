@@ -1,22 +1,6 @@
 
 $(function () {
 
-
-
-$('.program__acc-link').click (function(e){
-  console.log('Текст')
-  e.preventDefault()
-  if ($(this).hasClass('program__acc-link--active')) {
-      $(this).removeClass('program__acc-link--active')
-      $(this).children('.program__acc-text').slideUp()
-      stopImmediatePropagation()
-  }   
-  $('.program__acc-link').removeClass('program__acc-link--active')
-  $('.program__acc-text').slideUp()
-  $(this).toggleClass('program__acc-link--active')
-  $(this).children('.program__acc-text').slideDown()
-})
-
 $(".header__nav-item, .header__nav, .footer__go-top").on("click", function (e) {
   e.preventDefault()
   var id = $(this).attr('href'),
