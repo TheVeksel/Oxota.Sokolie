@@ -215,6 +215,16 @@ margin-right: 2.1482277121374866vh;
 /*--------------------------------BIGIMAGE------------------------------------------------------------*/
 /*--------------------------------BIGIMAGE------------------------------------------------------------*/
 
+.bigimage__heading h1 {
+  text-align: center;
+  color: #000;
+  font-family: KellySlab;
+  font-size: 4.296455424274973vh;
+  font-weight: 900;
+  line-height: 31px; /* 155% */
+  margin-bottom: 20px;
+}
+
 .bigimage__image-box {
   display: flex;
   flex-direction: column;
@@ -222,7 +232,7 @@ margin-right: 2.1482277121374866vh;
   text-align: center;
   max-width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 /*--------------------------------CLOTHES------------------------------------------------------------*/
@@ -562,14 +572,12 @@ table {
 }
 
 .contact__image-box {
-  width: 80%;
+  max-width: 850px;
   height: 400px;
-  border-radius: 4px;
-  padding-bottom: 50px;
   margin: 30px auto;
   display: flex;
     justify-content: center;
-    align-items: center;
+    border: #000 ridge 3px;
 }
 
 .info__person {
