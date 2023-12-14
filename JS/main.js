@@ -1,7 +1,7 @@
 
 $(function () {
 
-$(".header__nav-item, .header__nav, .footer__go-top").on("click", function (e) {
+$(".header__nav-item").on("click", function (e) {
   e.preventDefault()
   var id = $(this).attr('href'),
     top = $(id).offset().top
