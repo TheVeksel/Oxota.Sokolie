@@ -2,21 +2,21 @@ body {
   background-color: #fff;
   color: #000;
   font-family: Arial, sans-serif;
-  margin: 0; 
-    background-image: url('/Photo/photo_2023-09-23_15-41-32.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    padding-top: 60px; 
+  margin: 0;
+  background-image: url('/Photo/photo_2023-09-23_15-41-32.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 60px;
 }
 
 
 .container {
-  max-width: 128.89366272824918vh; 
-  margin: 0 auto; 
-  background-color: rgba(255, 255, 255, 0.8); 
-  padding-left: 7.518796992481203vh; 
-  padding-right: 7.518796992481203vh; 
+  max-width: 128.89366272824918vh;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 7.518796992481203vh;
+  padding-right: 7.518796992481203vh;
 }
 
 .wrapper {
@@ -42,9 +42,10 @@ body {
 .header__nav {
   text-align: center;
   color: white;
-  margin-right:  0.5370569280343717vh;
+  margin-right: 0.5370569280343717vh;
   width: 60%;
 }
+
 .header__nav a {
   text-align: center;
   margin-right: 1.0741138560687433vh;
@@ -62,6 +63,7 @@ body {
 .header__logo {
   width: 20%;
 }
+
 .header__logo img {
   width: 10.741138560687434vh;
   margin-left: 2.1482277121374866;
@@ -70,17 +72,18 @@ body {
 .header__name {
   max-width: 20%;
   color: #FFF;
-text-align: right;
-font-family: KellySlab;
-font-size: 2.1482277121374866vh;
-font-weight: 400;
-line-height: normal;
-margin-right: 2.1482277121374866vh;
+  text-align: right;
+  font-family: KellySlab;
+  font-size: 2.1482277121374866vh;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 2.1482277121374866vh;
 }
 
 .animated-element {
   opacity: 0;
-  transition: opacity 1.2s ease; /* Добавляем плавное изменение прозрачности */
+  transition: opacity 1.2s ease;
+  /* Добавляем плавное изменение прозрачности */
 }
 
 .animated-element.visible {
@@ -99,13 +102,15 @@ margin-right: 2.1482277121374866vh;
   text-align: center;
   padding-top: 60px;
 }
+
 .about__title {
   color: #000;
   text-align: center;
   font-family: KellySlab;
   font-size: 4.5vh;
   font-weight: 700;
-  line-height: 63.96px; /* 123% */
+  line-height: 63.96px;
+  /* 123% */
 }
 
 .about__text-black {
@@ -146,7 +151,8 @@ margin-right: 2.1482277121374866vh;
   font-family: KellySlab;
   font-size: 4.296455424274973vh;
   font-weight: 700;
-  line-height: 58.9px; /* 155% */
+  line-height: 58.9px;
+  /* 155% */
   max-width: calc(1920px - 1160px);
   margin: 0 auto;
 }
@@ -156,7 +162,8 @@ margin-right: 2.1482277121374866vh;
   font-family: KellySlab;
   font-size: 3.1482277121374866vh;
   font-weight: 700;
-  line-height: 58.9px; /* 155% */
+  line-height: 58.9px;
+  /* 155% */
   max-width: calc(1920px - 1160px);
   margin: 0 auto;
 }
@@ -166,7 +173,8 @@ margin-right: 2.1482277121374866vh;
   font-family: KellySlab;
   font-size: 3.1482277121374866vh;
   font-weight: 700;
-  line-height: 43.4px; /* 155% */
+  line-height: 43.4px;
+  /* 155% */
   max-width: calc(1920px - 1160px);
   margin: 0 auto;
   margin-bottom: 120px;
@@ -187,7 +195,8 @@ margin-right: 2.1482277121374866vh;
   font-family: KellySlab;
   font-size: 4.296455424274973vh;
   font-weight: 900;
-  line-height: 31px; /* 155% */
+  line-height: 31px;
+  /* 155% */
   margin-bottom: 20px;
 }
 
@@ -196,7 +205,8 @@ margin-right: 2.1482277121374866vh;
   font-family: KellySlab;
   font-size: 2.1482277121374866vh;
   font-weight: 300;
-  line-height: 31px; /* 155% */
+  line-height: 31px;
+  /* 155% */
 }
 
 .attention__days {
@@ -204,7 +214,8 @@ margin-right: 2.1482277121374866vh;
   font-family: KellySlab;
   font-size: 2.1482277121374866vh;
   font-weight: 300;
-  line-height: 31px; /* 155% */
+  line-height: 31px;
+  /* 155% */
   margin-bottom: 30px;
 }
 
@@ -221,7 +232,7 @@ margin-right: 2.1482277121374866vh;
   font-family: KellySlab;
   font-size: 40px;
   font-weight: 900;
-  line-height: 40px; 
+  line-height: 40px;
   margin-bottom: 20px;
 }
 
@@ -238,8 +249,7 @@ margin-right: 2.1482277121374866vh;
 /*--------------------------------CLOTHES------------------------------------------------------------*/
 /*--------------------------------CLOTHES------------------------------------------------------------*/
 
-.clothes {
-}
+.clothes {}
 
 .clothes__heading {
   text-align: center;
@@ -249,7 +259,8 @@ margin-right: 2.1482277121374866vh;
   font-size: 4.5vh;
   font-style: normal;
   font-weight: 700;
-  line-height: 46.5px; /* 155% */
+  line-height: 46.5px;
+  /* 155% */
   margin-bottom: 30px;
 }
 
@@ -258,7 +269,8 @@ margin-right: 2.1482277121374866vh;
   font-family: KellySlab;
   font-size: 2.5vh;
   font-weight: 300;
-  line-height: 38px; /* 154.545% */
+  line-height: 38px;
+  /* 154.545% */
   max-width: 720px;
   margin: 0 auto;
   padding-bottom: 100px;
@@ -279,23 +291,25 @@ margin-right: 2.1482277121374866vh;
 
 .program__heading-subtitle {
   color: #000;
-text-align: center;
-font-family: KellySlab;
-font-size: 4.5vh;
-font-weight: 700;
-line-height: 51.66px; /* 123% */
-margin-bottom: 30px;
-padding-top: 80px;
+  text-align: center;
+  font-family: KellySlab;
+  font-size: 4.5vh;
+  font-weight: 700;
+  line-height: 51.66px;
+  /* 123% */
+  margin-bottom: 30px;
+  padding-top: 80px;
 }
 
 .program__heading-title {
   margin-bottom: 60px;
   color: #000;
-text-align: center;
-font-family: KellySlab;
-font-size: 2.5vh;
-font-weight: 700;
-line-height: 37.7px; /* 145% */
+  text-align: center;
+  font-family: KellySlab;
+  font-size: 2.5vh;
+  font-weight: 700;
+  line-height: 37.7px;
+  /* 145% */
 }
 
 table {
@@ -364,8 +378,7 @@ table {
   margin-bottom: 50px;
 }
 
-.serveses__dopinfo:first-child {
-}
+.serveses__dopinfo:first-child {}
 
 .space {
   margin-bottom: 70px;
@@ -388,9 +401,7 @@ table {
   padding-top: 40px;
 }
 
-.news {
-  
-}
+.news {}
 
 .news__title {
   padding-top: 80px;
@@ -399,15 +410,18 @@ table {
   font-family: KellySlab;
   font-size: 4.5vh;
   font-weight: 700;
-  line-height: 51.66px; /* 123% */
+  line-height: 51.66px;
+  /* 123% */
 }
+
 .news__subtitle {
   color: #000;
   text-align: center;
   font-family: KellySlab;
   font-size: 3vh;
   font-weight: 700;
-  line-height: 51.66px; /* 123% */
+  line-height: 51.66px;
+  /* 123% */
 }
 
 .news__text {
@@ -415,13 +429,14 @@ table {
   font-family: KellySlab;
   font-size: 2.5vh;
   font-weight: 400;
-  line-height: 37.2px; /* 155% */
+  line-height: 37.2px;
+  /* 155% */
   max-width: calc(1920px - 1160px);
   margin: 0 auto;
   padding-bottom: 80px;
 }
 
-.news__tel { 
+.news__tel {
   font-weight: 700;
 }
 
@@ -429,13 +444,9 @@ table {
 /*--------------------------------MEMBERSHIP------------------------------------------------------------*/
 
 
-.main__membership {
+.main__membership {}
 
-}
-
-.membership {
-
-}
+.membership {}
 
 .membership__heading {
   color: #000;
@@ -443,7 +454,8 @@ table {
   font-family: KellySlab;
   font-size: 4.5vh;
   font-weight: 700;
-  line-height: 51.66px; /* 123% */
+  line-height: 51.66px;
+  /* 123% */
   margin-bottom: 40px;
 }
 
@@ -452,7 +464,8 @@ table {
   font-family: KellySlab;
   font-size: 2.5vh;
   font-weight: 400;
-  line-height: 31px; /* 155% */
+  line-height: 31px;
+  /* 155% */
   max-width: calc(1920px - 1160px);
   margin: 0 auto;
 }
@@ -461,13 +474,9 @@ table {
 /*--------------------------------ORDER------------------------------------------------------------*/
 /*--------------------------------ORDER------------------------------------------------------------*/
 
-.main__order {
+.main__order {}
 
-}
-
-.order {
-  
-}
+.order {}
 
 .order__heading {
   color: #000;
@@ -475,7 +484,8 @@ table {
   font-family: KellySlab;
   font-size: 4.296455424274973vh;
   font-weight: 900;
-  line-height: 51.66px; /* 123% */
+  line-height: 51.66px;
+  /* 123% */
   margin-bottom: 40px;
 }
 
@@ -485,7 +495,8 @@ table {
   font-family: Lato;
   font-size: 2.0416666666666667vh;
   font-weight: 400;
-  line-height: 24.8px; /* 155% */
+  line-height: 24.8px;
+  /* 155% */
   margin-bottom: 10px;
 }
 
@@ -493,13 +504,9 @@ table {
 /*--------------------------------HOWTO------------------------------------------------------------*/
 /*--------------------------------HOWTO------------------------------------------------------------*/
 
-.main__howto {
-  
-}
+.main__howto {}
 
-.howto {
-
-}
+.howto {}
 
 .howto__header {
   padding-top: 100px;
@@ -508,13 +515,12 @@ table {
   font-family: KellySlab;
   font-size: 4.5vh;
   font-weight: 700;
-  line-height: 42px; /* 150% */
+  line-height: 42px;
+  /* 150% */
   margin-bottom: 30px;
 }
 
-.howto__content {
-  
-}
+.howto__content {}
 
 .howto__list {
   padding-bottom: 120px;
@@ -525,7 +531,8 @@ table {
   font-family: KellySlab;
   font-size: 2.5vh;
   font-weight: 400;
-  line-height: 42px; /* 150% */
+  line-height: 42px;
+  /* 150% */
   list-style-type: disc;
 }
 
@@ -537,10 +544,9 @@ table {
   padding-top: 40px;
 }
 
-.contact__inner {
-}
+.contact__inner {}
 
-.contact__content{
+.contact__content {
   text-align: center;
 }
 
@@ -576,13 +582,11 @@ table {
   height: 400px;
   margin: 30px auto;
   display: flex;
-    justify-content: center;
-    border: #000 ridge 3px;
+  justify-content: center;
+  border: #000 ridge 3px;
 }
 
-.info__person {
-
-}
+.info__person {}
 
 .black {
   font-weight: 700;
@@ -597,9 +601,8 @@ table {
   text-align: center;
 }
 
-.contact__huntplace {
+.contact__huntplace {}
 
-}
 .contact__huntplace-heading {
   font-family: KellySlab;
   font-weight: 700;
@@ -608,6 +611,7 @@ table {
   color: #000;
   margin-bottom: 30px;
 }
+
 .contact__huntplace-map {
   border: #000 ridge 3px;
 }
@@ -622,30 +626,47 @@ table {
 
 
 @media screen and (max-width: 1135px) {
+
   .header__name,
   .header__nav-item a {
     font-size: 0.8rem;
   }
+
+  .header__nav {
+    width: 50%;
+  }
+
+  .header__name {
+    max-width: 30%;
+  }
+  
+  .howtoadptive th {
+    max-width: 150px;
+    font-size: 16px; padding: 0;
+  }
+
 }
+
 @media screen and (max-width: 600px) {
   .kaban th, .kaban td, .kaban tr {
-      padding: 4px; 
+    padding: 4px;
   }
 
   .kaban td, .kaban th, .kaban tr {
-      max-width: calc(20% - 200px); 
+    max-width: calc(20% - 200px);
   }
 }
+
 @media screen and (max-width: 400px) {
   .kaban th, .kaban td, .kaban tr {
-      padding: 0; 
+    padding: 0;
   }
 
   .kaban td, .kaban th {
-      max-width: 80%; 
+    max-width: 80%;
   }
 
-  .bobr th, .bobr td  {
+  .bobr th, .bobr td {
     padding: 5px;
   }
 }

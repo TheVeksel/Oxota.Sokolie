@@ -1,0 +1,278 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.89);
+    padding: 100px 0 150px 0;
+    /* Заменил margin-top на padding для лучшего отображения контента */
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    /* Добавил ширину для фиксированного заголовка */
+    max-height: 8%;
+    padding: 10px 20px;
+    /* Изменил внутренний отступ для лучшего отображения */
+}
+
+.header__nav {
+    text-align: center;
+    color: white;
+    width: 60%;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav a {
+    text-align: center;
+    color: #FFF;
+    font-family: KellySlab;
+    font-size: 1.5rem;
+    /* Исправил размер шрифта для лучшей читаемости */
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.header__logo {
+    width: 20%;
+}
+
+.header__logo img {
+    width: 50px;
+    /* Изменил ширину логотипа для адаптации под разные экраны */
+}
+
+.header__name {
+    max-width: 20%;
+    color: #FFF;
+    text-align: right;
+    font-family: KellySlab;
+    font-size: 1.5rem;
+    /* Изменил размер шрифта для лучшей читаемости */
+    font-weight: 400;
+    margin-right: 20px;
+    /* Изменил отступы для лучшего визуального отделения */
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Стили галереи */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    /* Изменил максимальную ширину галереи */
+    padding: 0 20px;
+    /* Добавил отступы для лучшего отображения */
+}
+
+.gall__heading {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.gall__heading-h {
+    color: white;
+    font-size: 52px;
+}
+
+.gallery__card {
+    display: flex;
+    width: 100%;
+    /* Изменил ширину карточки для адаптивности */
+    max-width: 300px;
+    /* Добавил максимальную ширину для карточки */
+    margin: 10px;
+    /* Изменил отступы для лучшего визуального отделения */
+    box-sizing: border-box;
+    /* Учел внутренние отступы в ширине */
+}
+.gallery__card-vid {
+    display: flex;
+    width: 100%;
+    /* Изменил ширину карточки для адаптивности */
+    max-width: 300px;
+    /* Добавил максимальную ширину для карточки */
+    margin: 10px;
+    /* Изменил отступы для лучшего визуального отделения */
+    box-sizing: border-box;
+    /* Учел внутренние отступы в ширине */
+}
+
+.gallery__img {
+    width: 100%;
+    height: auto;
+}
+.gallery__vid {
+    width: 100%;
+    /* Изменил ширину изображения для адаптивности */
+    height: auto;
+    /* Автоматическая высота для сохранения пропорций */
+}
+
+.gallery__card:hover .gallery__img {
+    transform: scale(1.05);
+    /* Незначительно увеличил масштаб при наведении */
+}
+
+
+/* Popup + slider styles */
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.89);
+    padding: 0 10px;
+}
+
+.slider__container {
+    display: flex
+}
+
+.slider__container img {
+    animation: anim .5s ease
+}
+
+
+/* Button styles */
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #000000 0%, #000000 50%, #ffffff 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgba(255, 255, 255, 0.35);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.slider__btn:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+.slider__btn-left {
+    left: 25px
+}
+
+.slider__btn-right {
+    right: 25px
+}
+
+.slider__btn-close {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #ffffff inset, 0 0 0 0 #767676;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    transition: .15s ease-in-out;
+    cursor: pointer;
+}
+
+.slider__btn-close:hover {
+    box-shadow: 0 0 10px 0 #000000 inset, 0 0 10px 4px #ffffff;
+    color: #000000;
+}
+
+@keyframes anim {
+    0% {
+        border-radius: 0;
+        transform: scale(0)
+    }
+
+    50% {
+        border-radius: 10%;
+        transform: scale(1.2)
+    }
+
+    100% {
+        border-radius: 0;
+        transform: scale(1)
+    }
+}
+
+@media screen and (max-width: 1270px) {
+
+    .header__name {
+        display: none;
+    }
+
+    .header__nav {
+        width: 100%;
+    }
+    
+    .header__nav-item {
+        margin-right: 15px;
+    }
+    a.header__nav-item {
+        margin-right: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .header__logo {
+        display: none;
+    }
+
+    .slider__btn {
+        top: 90%;
+        transform: translateY(-90%);
+    }
+    .slider__btn-close {
+        padding: 5px 10px;
+        bottom: 85%;
+        left: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 641px) {
+    .slider__btn-close {
+        left: 45%;
+        bottom: 10%;
+        padding: 10px 15px;
+        transform: translateY(-15%);
+        transform: translateX(-50%);
+    }
+}

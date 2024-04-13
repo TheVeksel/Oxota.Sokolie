@@ -23,7 +23,7 @@ function checkScreenWidth() {
   const changingText = document.getElementById('changing-text');
 
   if (screenWidth <= 1135) {
-      changingText.textContent = "Союз ООРО Всеволожского района Ленинградской области";
+      changingText.textContent = "Союз ООРО Всеволожского района";
   } else {
       changingText.textContent = "МОО «Союз ООРО Всеволожского района Ленинградской области»";
   }
