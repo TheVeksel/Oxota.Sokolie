@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding-top: 60px;
+  line-height: 150%;
 }
 
 
@@ -648,6 +649,9 @@ table {
 }
 
 @media screen and (max-width: 600px) {
+  .fixed-header {
+    max-height: 20%;
+  }
   .kaban th, .kaban td, .kaban tr {
     padding: 4px;
   }
