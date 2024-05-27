@@ -119,7 +119,7 @@ footer p {
 
 .about__text {
     margin-top: 2px;
-    text-align: justify
+    text-align: justify;
 }
 
 .about__list {
@@ -338,6 +338,11 @@ section#pricing .contact-info a:hover {
     .firstpart {
         max-width: 100%;
     }
+
+    .about__text {
+      margin-top: 2px;
+      text-align: left;
+  }
 
     .about__image {
         max-width: 99%;
