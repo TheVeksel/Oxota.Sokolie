@@ -103,7 +103,7 @@ footer p {
 
 /*--------------------ABOUT-------------------*/
 .about__head {
-    text-align: center;
+    text-align: left;
     font-size: 2.5rem;
     margin-bottom: 70px;
 }
