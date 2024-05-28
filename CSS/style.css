@@ -103,7 +103,6 @@ footer p {
 
 /*--------------------ABOUT-------------------*/
 .about__head {
-    text-align: left;
     font-size: 2.5rem;
     margin-bottom: 70px;
 }
@@ -118,7 +117,6 @@ footer p {
 }
 
 .about__text {
-    margin-top: 2px;
     text-align: left;
 }
 
@@ -128,7 +126,7 @@ footer p {
 }
 
 .about__img-block h2 {
-    margin-top: 0;
+    margin-top: 33px;
 }
 
 .about__image {
@@ -333,6 +331,10 @@ section#pricing .contact-info a:hover {
 
     .about__inner {
         display: block;
+    }
+
+    .about__head {
+        text-align: center;
     }
 
     .firstpart {
