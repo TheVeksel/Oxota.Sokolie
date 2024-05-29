@@ -32,13 +32,13 @@ header .container {
 }
 
 header .logo img {
-    width: clamp(70px, 5vw, 140px);
+    width: clamp(70px, 6vw, 140px);
     border-radius: 100%;
     transition: transform 0.3s;
 }
 
 header .logo img:hover {
-    transform: scale(1.09);
+    transform: scale(1.05);
 }
 
 header nav ul {
