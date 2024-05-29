@@ -269,6 +269,10 @@ section#pricing .contact-info a:hover {
     max-width: 100%;
 }
 
+.contact__heading {
+    text-align: center;
+}
+
 .contact__box-map {
     width: 50%;
 }
@@ -285,8 +289,20 @@ section#pricing .contact-info a:hover {
     margin: 0 auto;
 }
 
+.shedule {
+    border: #ff9900 2px solid;
+}
+
 .contact__box-info a {
     color: #ff9800;
+    transition: all  .3s;
+}
+.contact__box-info a:hover {
+    color: #965a00;
+}
+
+.contact__huntplace-heading {
+    text-align: center;
 }
 
 .contact__huntplace-map {
