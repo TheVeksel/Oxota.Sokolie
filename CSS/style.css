@@ -118,6 +118,7 @@ footer p {
 
 .about__text {
     text-align: left;
+    margin: 0;
 }
 
 .about__list {
@@ -127,6 +128,7 @@ footer p {
 
 .about__img-block h2 {
     margin-top: 33px;
+    margin-bottom: 70px;
 }
 
 .about__image {
