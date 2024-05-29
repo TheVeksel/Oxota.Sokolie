@@ -266,6 +266,7 @@ section#pricing .contact-info a:hover {
     padding: 20px;
     border-radius: 10px;
     transition: 1.5s;
+    max-width: 100%;
 }
 
 .contact__box-map {
