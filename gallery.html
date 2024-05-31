@@ -9,77 +9,85 @@
   </head>
   <body>
     <header class="fixed-header">
-      <a class="header__logo"
-        ><img src="/Photo/2_543613673929284308.jpg" alt="Логотип"
-      /></a>
-      <nav class="header__nav">
-        <a class="header__nav-item" href="#photo">Фото</a>
-        <a class="header__nav-item" href="index.html">На главную</a>
-        <a class="header__nav-item" href="#video">Видео</a>
-      </nav>
-      <div class="header__name" id="text-container">
-        <p id="changing-text">
-          МОО «Союз ООРО Всеволожского района Ленинградской области»
-        </p>
+      <div class="header__container">
+        <a class="header__logo"
+          ><img src="/Photo/2_543613673929284308.jpg" alt="Логотип"
+        /></a>
+        <nav class="header__nav">
+          <a class="header__nav-item" href="#photo">Фото</a>
+          <a href="index.html">На главную</a>
+          <a class="header__nav-item" href="#video">Видео</a>
+        </nav>
+        <div class="company-name">
+          <h1>Охота в «Соколье»</h1>
+      </div>
       </div>
     </header>
-    <section class="main__gall" id="photo">
-      <div class="gall__heading">
-        <h1 class="gall__heading-h">Фотографии</h1>
-      </div>
-    <div class="gallery">
-      <div class="gallery__card">
-        <img class="gallery__img" src="images/photo_2024-04-13_17-17-08.jpg" alt="Car" />
-      </div>
-      <div class="gallery__card">
-        <img class="gallery__img" src="images/photo_2024-04-13_17-17-28.jpg" alt="Car" />
-      </div>
-      <div class="gallery__card">
-        <img class="gallery__img" src="images/photo_2024-04-13_17-17-32.jpg" alt="Car" />
-      </div>
-      <div class="gallery__card">
-        <img class="gallery__img" src="images/photo_2024-04-13_17-17-39.jpg" alt="Car" />
-      </div>
-      <div class="gallery__card">
-        <img class="gallery__img" src="images/photo_2024-04-13_17-18-04.jpg" alt="Car" />
-      </div>
-      <div class="gallery__card">
-        <img class="gallery__img" src="images/photo_2024-04-13_17-18-10.jpg" alt="Car" />
-      </div>
-      <div class="gallery__card">
-        <img class="gallery__img" src="images/photo_2024-04-13_17-18-27.jpg" alt="Car" />
-      </div>
-      <div class="gallery__card">
-        <img class="gallery__img" src="images/photo_2024-04-13_17-17-53.jpg" alt="Car" />
-      </div>
+    <main>
+      <div class="container">
+        <section class="main__gall" id="photo">
+          <div class="gall__heading">
+            <h1 class="gall__heading-h">Фотографии</h1>
+          </div>
+        <div class="gallery">
+          <div class="gallery__card">
+            <img class="gallery__img" src="images/photo_2024-04-13_17-17-08.jpg" alt="Car" />
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" src="images/photo_2024-04-13_17-17-28.jpg" alt="Car" />
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" src="images/photo_2024-04-13_17-17-32.jpg" alt="Car" />
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" src="images/photo_2024-04-13_17-17-39.jpg" alt="Car" />
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" src="images/photo_2024-04-13_17-18-04.jpg" alt="Car" />
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" src="images/photo_2024-04-13_17-18-10.jpg" alt="Car" />
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" src="images/photo_2024-04-13_17-18-27.jpg" alt="Car" />
+          </div>
+          <div class="gallery__card">
+            <img class="gallery__img" src="images/photo_2024-04-13_17-17-53.jpg" alt="Car" />
+          </div>
+        </div>
+          <div class="gall__heading" id="video">
+            <h1 class="gall__heading-h">Видео</h1>
+          </div>
+          <div class="gallery">
+          <div class="gallery__card-vid">
+            <video class="gallery__vid" src="video/video_2024-04-13_17-05-36.mp4" controls alt="video"></video>
+          </div>
+          <div class="gallery__card-vid">
+            <video class="gallery__vid" src="video/video_2024-04-13_17-09-16.mp4" controls alt="video"></video>
+          </div>
+          <div class="gallery__card-vid">
+            <video class="gallery__vid" src="video/video_2024-04-13_17-09-30.mp4" controls alt="video"></video>
+          </div>
+          <div class="gallery__card-vid">
+            <video class="gallery__vid" src="video/video_2024-04-13_17-09-44.mp4" controls alt="video"></video>
+          </div>
+        </div>
+    
+        <div class="slider hidden">
+          <div class="slider__container">
+            <button class="slider__btn slider__btn-left"><</button>
+            <button class="slider__btn slider__btn-right">></button>
+          </div>
+          <button class="slider__btn-close">X</button>
+        </div>
+      </section>
     </div>
-      <div class="gall__heading" id="video">
-        <h1 class="gall__heading-h">Видео</h1>
-      </div>
-      <div class="gallery">
-      <div class="gallery__card-vid">
-        <video class="gallery__vid" src="video/video_2024-04-13_17-05-36.mp4" controls alt="video"></video>
-      </div>
-      <div class="gallery__card-vid">
-        <video class="gallery__vid" src="video/video_2024-04-13_17-09-16.mp4" controls alt="video"></video>
-      </div>
-      <div class="gallery__card-vid">
-        <video class="gallery__vid" src="video/video_2024-04-13_17-09-30.mp4" controls alt="video"></video>
-      </div>
-      <div class="gallery__card-vid">
-        <video class="gallery__vid" src="video/video_2024-04-13_17-09-44.mp4" controls alt="video"></video>
-      </div>
-    </div>
-
-    <div class="slider hidden">
-      <div class="slider__container">
-        <button class="slider__btn slider__btn-left"><</button>
-        <button class="slider__btn slider__btn-right">></button>
-      </div>
-      <button class="slider__btn-close">X</button>
-    </div>
-  </section>
-    <script src="index.js"></script>
+  </main>
+  <footer>
+    <p>&copy; 2024 МОО «Союз ООРО Всеволожского района Ленинградской области». Все права защищены.</p>
+  </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="JS/main.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

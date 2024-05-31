@@ -1,5 +1,4 @@
 html, body {
-    min-height: 100vh;
     -ms-overflow-style: none; 
     scrollbar-width: none;  
 }
@@ -9,75 +8,110 @@ body::-webkit-scrollbar {
 }
 
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.89);
-    padding: 100px 0 150px 0;
-    /* Заменил margin-top на padding для лучшего отображения контента */
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
+    background-color: #262626;
+    color: #fff;
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    max-width: 1400px;
     width: 100%;
-    /* Добавил ширину для фиксированного заголовка */
-    max-height: 8%;
-    padding: 10px 20px;
-    /* Изменил внутренний отступ для лучшего отображения */
+    padding: 0 20px;
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
 }
 
 .header__nav {
-    text-align: center;
-    color: white;
-    width: 60%;
-    gap: 40px;
+    list-style: none;
+    margin-right: 40px;
+    padding: 0;
     display: flex;
-    justify-content: center;
 }
 
 .header__nav a {
-    text-align: center;
     color: #FFF;
-    font-family: KellySlab;
-    font-size: 1.5rem;
-    /* Исправил размер шрифта для лучшей читаемости */
-    font-weight: 700;
     text-decoration: none;
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all .3s;
+    border-radius: 5px;
 }
 
-
-.header__logo {
-    width: 20%;
+.header__nav a:hover {
+    background-color: #ff9800;
+    transition: .3s all;
 }
 
 .header__logo img {
-    width: 50px;
-    /* Изменил ширину логотипа для адаптации под разные экраны */
+    width: clamp(70px, 6vw, 140px);
+    border-radius: 100%;
+    transition: transform 0.3s;
 }
 
-.header__name {
-    max-width: 20%;
-    color: #FFF;
-    text-align: right;
-    font-family: KellySlab;
-    font-size: 1.5rem;
-    /* Изменил размер шрифта для лучшей читаемости */
-    font-weight: 400;
-    margin-right: 20px;
-    /* Изменил отступы для лучшего визуального отделения */
+.company-name h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 1.8vw, 2rem);
+    color: #ff9800;
 }
 
 .hidden {
     display: none !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    font-family: "Old Standard TT", serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+main section h1, h2 {
+    color: #ff9800;
+}
+
+footer {
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* Стили галереи */
@@ -97,7 +131,6 @@ body {
 }
 
 .gall__heading-h {
-    color: white;
     font-size: 52px;
 }
 
