@@ -73,7 +73,7 @@ header .company-name h1 {
 
 main {
     font-family: "Old Standard TT", serif;
-    padding: 20px;
+    padding: 0px;
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
