@@ -155,7 +155,7 @@ section#pricing .pricing__heading {
     text-align: center;
 }
 
-section#pricing .pricing__heading h1{
+section#pricing .pricing__heading h1 {
     text-align: center;
 }
 
@@ -297,8 +297,9 @@ section#pricing .contact-info a:hover {
 
 .contact__box-info a {
     color: #ff9800;
-    transition: all  .3s;
+    transition: all .3s;
 }
+
 .contact__box-info a:hover {
     color: #965a00;
 }
@@ -361,9 +362,9 @@ section#pricing .contact-info a:hover {
     }
 
     .about__text {
-      margin-top: 2px;
-      text-align: left;
-  }
+        margin-top: 2px;
+        text-align: left;
+    }
 
     .about__image {
         max-width: 99%;
@@ -397,6 +398,14 @@ section#pricing .contact-info a:hover {
 }
 
 @media (max-width: 400px) {
+    main {
+        padding: 0;
+    }
+
+    .about__text {
+        padding: 20px;
+    }
+
     table {
         max-width: 300px;
         /* Максимальная ширина таблицы */
