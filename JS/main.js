@@ -1,4 +1,3 @@
-
 $(function () {
 
 $(".header__nav-item").on("click", function (e) {
@@ -17,6 +16,45 @@ $(window).scroll(function() {
     }
   });
 });
-
-
 })
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+const butt = document.getElementById('topBtn');
+let prevScrollpos = window.scrollY;
+
+function handleScroll() {
+    let currentScrollPos = window.scrollY;
+
+    if (prevScrollpos > currentScrollPos || window.scrollY < 10) {
+      butt.style.display = "block";
+    } else {
+      butt.style.display = "none";
+    }
+
+    if (prevScrollpos > currentScrollPos && window.scrollY > 10) {
+      butt.style.opacity = "1";
+    } else {
+      butt.style.opacity = "0";
+    }
+
+    prevScrollpos = currentScrollPos;
+};
+
+window.onscroll = function() {
+    handleScroll();
+};
+
+function topFunction() {
+  smoothScrollToTop();
+  butt.style.display = "none";
+}
+
+function smoothScrollToTop() {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+      window.requestAnimationFrame(smoothScrollToTop);
+      window.scrollTo(0, c - c / 8);
+  }
+}
+

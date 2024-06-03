@@ -1,4 +1,7 @@
 /*----------HEADER/GLOBAL/FOOTER-----------*/
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -106,6 +109,34 @@ footer {
 footer p {
     margin: 0;
 }
+
+
+#topBtn {
+    display: none; /* Скрыть кнопку по умолчанию */
+    position: fixed; /* Зафиксировать кнопку на экране */
+    bottom: 30px; /* Расположить кнопку 30px от нижнего края экрана */
+    right: 15px; /* Расположить кнопку 15px от правого края экрана */
+    z-index: 99; /* Сделать так, чтобы кнопка была поверх других элементов */
+    border: none; /* Убрать рамку */
+    border-radius: 50%; /* Сделать кнопку круглой */
+    outline: none; /* Убрать обводку */
+    background: linear-gradient(145deg, #444, #222); /* Градиентный фон */
+    color: #ff9800; /* Цвет текста */
+    cursor: pointer; /* Курсор указателя при наведении */
+    font-size: 24px; /* Размер шрифта */
+    width: 60px; /* Фиксированная ширина */
+    height: 60px; /* Фиксированная высота */
+    transition: all 0.3s ease; /* Плавный переход */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+#topBtn:hover {
+    background: linear-gradient(145deg, #555, #333); /* Градиентный фон при наведении */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+    transform: translateY(-5px); /* Поднятие кнопки при наведении */
+}
+
+
 
 /*--------------------ABOUT-------------------*/
 .about__head {
@@ -351,6 +382,16 @@ section#pricing .contact-info a:hover {
     header nav ul li {
         margin-left: 0;
         margin-bottom: 10px;
+    }
+
+    #topBtn {
+        /* Дополнительные стили для мобильных устройств */
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        padding: 15px;
     }
 
     .about__inner {
