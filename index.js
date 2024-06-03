@@ -56,3 +56,26 @@ const closeSlider = () => {
 }
 
 
+const gallery = document.querySelector('.gallery');
+let hammer = new Hammer(gallery);
+
+hammer.on('swipeleft', () => changePicture('right'));
+hammer.on('swiperight', () => changePicture('left'));
+
+
+
+const videos = document.querySelectorAll('.gallery__vid');
+
+videos.forEach(video => {
+    video.addEventListener('click', () => {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+        }
+    });
+});
