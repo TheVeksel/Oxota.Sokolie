@@ -7,22 +7,22 @@ $(".header__nav-item").on("click", function (e) {
 });
 
 // Плавная прокрутка наверх и появление кнопки вверх
-const butt = document.getElementById('topBtn');
+const buttn = document.getElementById('topBtnn');
 let prevScrollpos = window.scrollY;
 
 function handleScroll() {
     let currentScrollPos = window.scrollY;
 
     if (prevScrollpos > currentScrollPos || window.scrollY < 10) {
-      butt.style.display = "block";
+      buttn.style.display = "block";
     } else {
-      butt.style.display = "none";
+      buttn.style.display = "none";
     }
 
     if (prevScrollpos > currentScrollPos && window.scrollY > 10) {
-      butt.style.opacity = "1";
+      buttn.style.opacity = "1";
     } else {
-      butt.style.opacity = "0";
+      buttn.style.opacity = "0";
     }
 
     prevScrollpos = currentScrollPos;
