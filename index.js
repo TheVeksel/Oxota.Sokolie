@@ -56,12 +56,36 @@ const closeSlider = () => {
 }
 
 
-const gallery = document.querySelector('.gallery');
-let hammer = new Hammer(gallery);
+const galleryCards = document.querySelectorAll('.gallery__card');
+let touchStartX = 0;
+let touchEndX = 0;
 
-hammer.on('swipeleft', () => changePicture('right'));
-hammer.on('swiperight', () => changePicture('left'));
+galleryCards.forEach(card => {
+    card.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
 
+    card.addEventListener('touchmove', e => {
+        touchEndX = e.changedTouches[0].screenX;
+    });
+
+    card.addEventListener('touchend', () => {
+        handleSwipe();
+    });
+});
+
+function handleSwipe() {
+    const threshold = 100; // Минимальное расстояние свайпа в пикселях
+
+    const distance = touchEndX - touchStartX;
+
+    if (Math.abs(distance) >= threshold) {
+        changePicture(distance > 0 ? 'left' : 'right');
+    }
+
+    touchStartX = 0;
+    touchEndX = 0;
+}
 
 
 const videos = document.querySelectorAll('.gallery__vid');
