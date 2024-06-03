@@ -47,7 +47,6 @@ window.onscroll = function() {
 
 function topFunction() {
   smoothScrollToTop();
-  butt.style.display = "none";
 }
 
 function smoothScrollToTop() {

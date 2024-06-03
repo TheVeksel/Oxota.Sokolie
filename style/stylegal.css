@@ -339,20 +339,17 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
-
+    table {
+        max-width: 300px;
+        /* Максимальная ширина таблицы */
+        width: 100%;
+        /* Таблица будет занимать всю доступную ширину до 500px */
+        table-layout: fixed;
+        /* Зафиксированное расположение колонок */
+        margin: 0 auto;
+    }
     header nav ul li {
         margin-left: 0;
         margin-bottom: 10px;
-
-        @media (max-width: 400px) {
-            table {
-                max-width: 300px;
-                /* Максимальная ширина таблицы */
-                width: 100%;
-                /* Таблица будет занимать всю доступную ширину до 500px */
-                table-layout: fixed;
-                /* Зафиксированное расположение колонок */
-                margin: 0 auto;
-            }
-        }
+        
     }}
