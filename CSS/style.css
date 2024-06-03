@@ -111,7 +111,7 @@ footer p {
 }
 
 
-#topBtn {
+#topBtnn {
     display: none; /* Скрыть кнопку по умолчанию */
     position: fixed; /* Зафиксировать кнопку на экране */
     bottom: 30px; /* Расположить кнопку 30px от нижнего края экрана */
@@ -130,7 +130,7 @@ footer p {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2); /* Тень */
 }
 
-#topBtn:hover {
+#topBtnn:hover {
     background: linear-gradient(145deg, #555, #333); /* Градиентный фон при наведении */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2); /* Тень при наведении */
     transform: translateY(-5px); /* Поднятие кнопки при наведении */
@@ -384,7 +384,7 @@ section#pricing .contact-info a:hover {
         margin-bottom: 10px;
     }
 
-    #topBtn {
+    #topBtnn {
         /* Дополнительные стили для мобильных устройств */
         bottom: 20px;
         right: 20px;
