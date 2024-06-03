@@ -23,6 +23,10 @@ $(window).scroll(function() {
 const butt = document.getElementById('topBtn');
 let prevScrollpos = window.scrollY;
 
+mybutton.addEventListener("click", function() {
+  topFunction();
+});
+
 window.onscroll = function() {
   handleScroll();
 };
