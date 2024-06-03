@@ -5,10 +5,13 @@ $(".header__nav-item").on("click", function (e) {
     top = $(id).offset().top;
   $('body,html').animate({ scrollTop: top }, 1300);
 });
-
-// Плавная прокрутка наверх и появление кнопки вверх
+////////////////////////////////////////////////////////////////
 const buttn = document.getElementById('topBtnn');
 let prevScrollpos = window.scrollY;
+
+window.onscroll = function() {
+  handleScroll();
+};
 
 function handleScroll() {
     let currentScrollPos = window.scrollY;
@@ -28,9 +31,6 @@ function handleScroll() {
     prevScrollpos = currentScrollPos;
 };
 
-window.onscroll = function() {
-    handleScroll();
-};
 
 function topFunction() {
   smoothScrollToTop();
