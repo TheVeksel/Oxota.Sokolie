@@ -23,6 +23,10 @@ $(window).scroll(function() {
 const butt = document.getElementById('topBtn');
 let prevScrollpos = window.scrollY;
 
+window.onscroll = function() {
+  handleScroll();
+};
+
 function handleScroll() {
     let currentScrollPos = window.scrollY;
 
@@ -41,9 +45,6 @@ function handleScroll() {
     prevScrollpos = currentScrollPos;
 };
 
-window.onscroll = function() {
-    handleScroll();
-};
 
 function topFunction() {
   smoothScrollToTop();
