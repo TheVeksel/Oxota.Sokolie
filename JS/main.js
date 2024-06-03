@@ -1,35 +1,14 @@
-$(function () {
-
+// Обработка события клика по элементам меню
 $(".header__nav-item").on("click", function (e) {
-  e.preventDefault()
+  e.preventDefault();
   var id = $(this).attr('href'),
-    top = $(id).offset().top
-  $('body,html').animate({ scrollTop: top }, 1300)
-})
-
-$(window).scroll(function() {
-  $(".animated-element").each(function() {
-    var position = $(this).offset().top;
-    var scrollPosition = $(window).scrollTop();
-    if (position < scrollPosition + $(window).height() - 100) { // Подстройте значение 100 по вашему усмотрению
-      $(this).addClass("visible");
-    }
-  });
+    top = $(id).offset().top;
+  $('body,html').animate({ scrollTop: top }, 1300);
 });
-})
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Плавная прокрутка наверх и появление кнопки вверх
 const butt = document.getElementById('topBtn');
 let prevScrollpos = window.scrollY;
-
-butt.addEventListener("click", function() {
-  topFunction();
-});
-
-window.onscroll = function() {
-  handleScroll();
-};
 
 function handleScroll() {
     let currentScrollPos = window.scrollY;
@@ -49,6 +28,9 @@ function handleScroll() {
     prevScrollpos = currentScrollPos;
 };
 
+window.onscroll = function() {
+    handleScroll();
+};
 
 function topFunction() {
   smoothScrollToTop();
