@@ -66,11 +66,17 @@ galleryCards.forEach(card => {
     });
 
     card.addEventListener('touchmove', e => {
+        e.preventDefault(); // Отмена стандартного поведения
         touchEndX = e.changedTouches[0].screenX;
     });
 
     card.addEventListener('touchend', () => {
         handleSwipe();
+    });
+
+    card.addEventListener('touchcancel', () => {
+        touchStartX = 0;
+        touchEndX = 0;
     });
 });
 
@@ -78,15 +84,15 @@ function handleSwipe() {
     const threshold = 100; // Минимальное расстояние свайпа в пикселях
 
     const distance = touchEndX - touchStartX;
+    const verticalDistance = Math.abs(touchEndY - touchStartY); // Дополнительная проверка по вертикали
 
-    if (Math.abs(distance) >= threshold) {
+    if (Math.abs(distance) >= threshold && verticalDistance < 50) {
         changePicture(distance > 0 ? 'left' : 'right');
     }
 
     touchStartX = 0;
     touchEndX = 0;
 }
-
 
 const videos = document.querySelectorAll('.gallery__vid');
 
