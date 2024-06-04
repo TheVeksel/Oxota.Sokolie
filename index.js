@@ -1,15 +1,15 @@
 let pictureshowed = false;
 const cards = document.querySelectorAll('.gallery__card'),
-	pictures = document.querySelectorAll('.gallery__img'),
-	slider = document.querySelector('.slider'),
-	sliderContainer = document.querySelector('.slider__container'),
-	sliderBtnLeft = document.querySelector('.slider__btn-left'),
-	sliderBtnRight = document.querySelector('.slider__btn-right'),
-	sliderClose = document.querySelector('.slider__btn-close');
+    pictures = document.querySelectorAll('.gallery__img'),
+    slider = document.querySelector('.slider'),
+    sliderContainer = document.querySelector('.slider__container'),
+    sliderBtnLeft = document.querySelector('.slider__btn-left'),
+    sliderBtnRight = document.querySelector('.slider__btn-right'),
+    sliderClose = document.querySelector('.slider__btn-close');
 
 let cardIndex = 0,
-	pictureFull = null,
-	newPictureFull = null;
+    pictureFull = null,
+    newPictureFull = null;
 
 sliderBtnLeft.addEventListener('click', () => changePicture('left'));
 sliderBtnRight.addEventListener('click', () => changePicture('right'));
