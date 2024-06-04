@@ -93,6 +93,13 @@ main section h2 {
     color: #ff9800;
 }
 
+.body__container {
+    max-width: 1260px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 footer {
     background-color: #262626;
     color: #fff;
@@ -257,27 +264,26 @@ section#pricing .contact-info a:hover {
     text-align: center;
 }
 
-.news__text {
+.news__text  {
     margin: 0 auto;
     margin-bottom: 80px;
-    text-align: justify;
+    display: flex;
+    justify-content: center;
 }
 
 .news__tel {
     color: #ff9800;
 }
-
+/*---------------CLOTHES------------*/
+.clothes__heading {
+    text-align: center;
+}
 /*---------------MEMBERSHIP---------*/
 
 .membership__heading {
     text-align: center;
     margin-bottom: 40px;
 }
-
-.membership__content p {
-    text-align: justify;
-}
-
 /*---------------HOWTO--------------*/
 
 .howto__header {
@@ -367,14 +373,20 @@ section#pricing .contact-info a:hover {
         transition: 1.5s;
     }
 }
-
+@media (max-width: 1200px) {
+    .body__container {
+        max-width: 800px;
+    }
+}
 @media (max-width: 800px) {
     header .container {
         flex-direction: column;
         align-items: center;
         padding: 0 10px;
     }
-
+    .body__container {
+        max-width: 600px;
+    }
     header nav ul {
         margin-top: 10px;
         margin-right: 0;
