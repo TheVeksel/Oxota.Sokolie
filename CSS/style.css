@@ -260,6 +260,7 @@ section#pricing .contact-info a:hover {
 .news__text {
     margin: 0 auto;
     margin-bottom: 80px;
+    text-align: justify;
 }
 
 .news__tel {
@@ -273,6 +274,10 @@ section#pricing .contact-info a:hover {
     margin-bottom: 40px;
 }
 
+.membership__content p {
+    text-align: justify;
+}
+
 /*---------------HOWTO--------------*/
 
 .howto__header {
@@ -283,6 +288,7 @@ section#pricing .contact-info a:hover {
 
 .howto__list {
     padding-bottom: 30px;
+
 }
 
 .howto__list-item {
