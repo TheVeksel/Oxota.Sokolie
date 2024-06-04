@@ -1,19 +1,18 @@
 let pictureshowed = false;
-const cards = document.querySelectorAll('.gallery__card'),
-    pictures = document.querySelectorAll('.gallery__img'),
-    slider = document.querySelector('.slider'),
-    sliderContainer = document.querySelector('.slider__container'),
-    sliderBtnLeft = document.querySelector('.slider__btn-left'),
-    sliderBtnRight = document.querySelector('.slider__btn-right'),
-    sliderClose = document.querySelector('.slider__btn-close');
+const cards = document.querySelectorAll('.gallery__card');
+const pictures = document.querySelectorAll('.gallery__img');
+const slider = document.querySelector('.slider');
+const sliderContainer = document.querySelector('.slider__container');
+const sliderBtnLeft = document.querySelector('.slider__btn-left');
+const sliderBtnRight = document.querySelector('.slider__btn-right');
+const sliderClose = document.querySelector('.slider__btn-close');
 
-let cardIndex = 0,
-    pictureFull = null,
-    newPictureFull = null;
+let cardIndex = 0;
+let pictureFull = null;
 
 sliderBtnLeft.addEventListener('click', () => changePicture('left'));
 sliderBtnRight.addEventListener('click', () => changePicture('right'));
-sliderClose.addEventListener('click', () => closeSlider());
+sliderClose.addEventListener('click', closeSlider);
 
 cards.forEach((item, index) => {
     item.addEventListener('click', () => {
@@ -22,90 +21,60 @@ cards.forEach((item, index) => {
     });
 });
 
-const showPicture = () => {
+function showPicture() {
     pictureFull = pictures[cardIndex].cloneNode();
     pictureFull.style.maxWidth = '500px';
-    sliderContainer.append(pictureFull);
+    sliderContainer.innerHTML = '';
+    sliderContainer.appendChild(pictureFull);
     slider.classList.remove('hidden');
     pictureshowed = true;
 }
 
-const changePicture = (dir) => {
-
+function changePicture(dir) {
     if (dir === 'left') {
-        cardIndex > 0 ? cardIndex-- : cardIndex = cards.length - 1;
-
+        cardIndex = (cardIndex - 1 + cards.length) % cards.length;
     } else if (dir === 'right') {
-        cardIndex < cards.length - 1 ? cardIndex++ : cardIndex = 0;
-
-    } else {
-        return;
+        cardIndex = (cardIndex + 1) % cards.length;
     }
 
-    newPictureFull = pictures[cardIndex].cloneNode();
+    const newPictureFull = pictures[cardIndex].cloneNode();
     newPictureFull.style.maxWidth = '500px';
-    pictureFull.replaceWith(newPictureFull);
+    sliderContainer.innerHTML = '';
+    sliderContainer.appendChild(newPictureFull);
     pictureFull = newPictureFull;
 }
 
-const closeSlider = () => {
-    pictureFull && pictureFull.remove();
-    newPictureFull && newPictureFull.remove();
+function closeSlider() {
     slider.classList.add('hidden');
     pictureshowed = false;
 }
 
-
-const galleryCards = document.querySelectorAll('.gallery__card');
 let touchStartX = 0;
 let touchEndX = 0;
 
-galleryCards.forEach(card => {
+cards.forEach(card => {
     card.addEventListener('touchstart', e => {
         touchStartX = e.changedTouches[0].screenX;
     });
 
     card.addEventListener('touchmove', e => {
-        e.preventDefault(); // Отмена стандартного поведения
+        e.preventDefault(); // Prevent scrolling while swiping
         touchEndX = e.changedTouches[0].screenX;
     });
 
     card.addEventListener('touchend', () => {
         handleSwipe();
     });
-
-    card.addEventListener('touchcancel', () => {
-        touchStartX = 0;
-        touchEndX = 0;
-    });
 });
 
 function handleSwipe() {
-    const threshold = 100; // Минимальное расстояние свайпа в пикселях
-
+    const threshold = 100; // Minimum swipe distance in pixels
     const distance = touchEndX - touchStartX;
-    const verticalDistance = Math.abs(touchEndY - touchStartY); // Дополнительная проверка по вертикали
 
-    if (Math.abs(distance) >= threshold && verticalDistance < 50) {
+    if (Math.abs(distance) >= threshold) {
         changePicture(distance > 0 ? 'left' : 'right');
     }
 
     touchStartX = 0;
     touchEndX = 0;
 }
-
-const videos = document.querySelectorAll('.gallery__vid');
-
-videos.forEach(video => {
-    video.addEventListener('click', () => {
-        if (video.requestFullscreen) {
-            video.requestFullscreen();
-        } else if (video.mozRequestFullScreen) {
-            video.mozRequestFullScreen();
-        } else if (video.webkitRequestFullscreen) {
-            video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) {
-            video.msRequestFullscreen();
-        }
-    });
-});
